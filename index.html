@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Home page for the Web Development and Software certificate project." />
+  <meta name="author" content="Dario Giaccone" />
+  <title>WDD231 Home Page</title>
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Site Logo" />
+    <span>Dario Giaccone</span>
+    <button id="hamburger" aria-label="Toggle navigation">&#9776;</button>
+    <nav id="navMenu">
+      <a href="#">Home</a>
+      <a href="#">Chamber of Commerce</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <section>
+      <h2>Welcome</h2>
+      <p>This is the homepage of your WDD231 project.</p>
+    </section>
+
+    <section>
+      <h2>Certificate Courses</h2>
+      <div id="courseFilters">
+        <button id="showAll">All Courses</button>
+        <button id="showWDD">WDD Courses</button>
+        <button id="showCSE">CSE Courses</button>
+      </div>
+      <div id="courseCards"></div>
+      <p>Total Credits: <span id="totalCredits">0</span></p>
+    </section>
+
+    <section>
+      <h2>About</h2>
+      <p>Learn more about the certificate and your progress.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/darios25" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/myprofile" target="_blank">LinkedIn</a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> Dario Giaccone, Italy</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
+
+
