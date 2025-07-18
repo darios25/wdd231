@@ -15,10 +15,11 @@
 </head>
 <body>
   <header>
-    <img src="images/trinacria.svg" alt="Site Logo" />
+    <img src="images/logo.svg" alt="Site Logo" />
     <span>Dario Giaccone</span>
-    <button id="hamburger" aria-label="Toggle navigation">&#9776;</button>
-    <nav id="navMenu">
+
+    <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <nav id="nav-Menu">
       <a href="#">Home</a>
       <a href="#">Chamber of Commerce</a>
       <a href="#">Final Project</a>
@@ -29,12 +30,17 @@
     <h1>Home</h1>
 
     <section>
-      <h2>Welcome</h2>
-      <p>This is the homepage of your WDD231 project.</p>
+      <h2>About Me</h2>
+      <p>Hello! My name is Dario Giaccone and I am from Palermo, Sicily, Italy. This is the homepage of my WDD231 project. I am an electronics technician and I work for a company that repairs motherboards. I am studying Software Development at BYU-Idaho. In my free time I like hiking and playing sports.</p>
     </section>
 
     <section>
-      <h2>Certificate Courses</h2>
+      <h2>Student Photo</h2>
+      <img src="images/profile.svg" alt="Student image">
+    </section>
+
+    <section>
+      <h2>Web Certificate Courses</h2>
       <div id="courseFilters">
         <button id="showAll">All Courses</button>
         <button id="showWDD">WDD Courses</button>
@@ -43,18 +49,14 @@
       <div id="courseCards"></div>
       <p>Total Credits: <span id="totalCredits">0</span></p>
     </section>
-
-    <section>
-      <h2>About</h2>
-      <p>Learn more about the certificate and your progress.</p>
-    </section>
   </main>
 
   <footer>
     <div class="social">
-      <a href="https://github.com/darios25" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/myprofile" target="_blank">LinkedIn</a>
-      <a href="" target="_blank"><img src="images/twitter-x.svg" alt="twitter-x" width="48" height="48"></a>
+      <a href="https://github.com/darios25" target="_blank"><img src="images/github.svg" alt="github" width="48" height="48"></a>
+      <a href="https://linkedin.com/in/myprofile" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="48" height="48"></a>
+      <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="twitter-x" width="48" height="48"></a>
+      
     </div>
     <p>&copy; <span id="currentyear"></span> Dario Giaccone, Italy</p>
     <p id="lastModified"></p>
