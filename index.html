@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Home page for the Web Development and Software certificate project." />
   <meta name="author" content="Dario Giaccone" />
-  <title>WDD231 Home Page</title>
-  <link rel="stylesheet" href="styles/normalize.css" />
-  <link rel="stylesheet" href="styles/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <title>WDD231 Home Page</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Boldonse:wght@400;700&display=swap" rel="stylesheet" />
   <script src="scripts/navigation.js" defer></script>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/small.css" />
   <script src="scripts/date.js" defer></script>
   <script src="scripts/course.js" defer></script>
 </head>
 <body>
   <header>
-    <img src="images/logo.svg" alt="Site Logo" />
-    <span>Dario Giaccone</span>
+    <img src="images/trinacria..jpg" alt="Site Logo" class="Logo" width="200"/>
+    <span>WDD231</span>
 
-    <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-    <nav id="nav-Menu">
+    <!-- <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button> -->
+
+    <nav id="Menu">
       <a href="#">Home</a>
       <a href="#">Chamber of Commerce</a>
       <a href="#">Final Project</a>
@@ -29,17 +32,17 @@
   <main>
     <h1>Home</h1>
 
-    <section>
+    <section class="about">
       <h2>About Me</h2>
       <p>Hello! My name is Dario Giaccone and I am from Palermo, Sicily, Italy. This is the homepage of my WDD231 project. I am an electronics technician and I work for a company that repairs motherboards. I am studying Software Development at BYU-Idaho. In my free time I like hiking and playing sports.</p>
     </section>
 
-    <section>
+    <section class="student">
       <h2>Student Photo</h2>
-      <img src="images/profile.svg" alt="Student image">
+      <img src="images/profile.jpg" alt="Student image">
     </section>
 
-    <section>
+    <section class="web certificate">
       <h2>Web Certificate Courses</h2>
       <div id="courseFilters">
         <button id="showAll">All Courses</button>
@@ -47,7 +50,7 @@
         <button id="showCSE">CSE Courses</button>
       </div>
       <div id="courseCards"></div>
-      <p>Total Credits: <span id="totalCredits">0</span></p>
+      <p>The total credits for course listed above is: <span id="totalCredits">0</span></p>
     </section>
   </main>
 
