@@ -95,7 +95,7 @@ function renderCourses(filter = "all") {
     card.style.backgroundColor = course.completed ? "#cce5ff" : "#f8d7da";
     card.style.padding = "1rem";
     card.style.marginBottom = "1rem";
-    card.innerHTML = `<strong>${course.code}</strong>: ${course.name} (${course.credits} credits)`;
+    card.innerHTML = `<strong>${course.number}</strong>: ${course.subject} (${course.credits} credits)`;
     container.appendChild(card);
   });
 }

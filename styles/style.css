@@ -38,10 +38,27 @@ nav a {
     border-radius: 3px;
 }
 
+div filter {
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: white;
+    padding: .3rem;
+    border-radius: 3px;
+}
 
-.about {
-    grid-column: 1/3;
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+main h1{
+    grid-column: span 2;
     grid-row: 1/2;
+}
+.about {
+    grid-column: 1/2;
+    grid-row: 2/3;
     background-color: rgba(225, 225, 225, 0.7);
     width: 700px;
     margin-left: 20px;
@@ -60,12 +77,12 @@ nav a {
 
 .student {
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 2/3;
     background: rgba(225, 225, 225, 0.7);
     width: 300px;
-    margin-left: 20px;
-    margin-top: 50px;
-    padding: 1rem;
+    /* margin-left: 20px; */
+    /* margin-top: 50px; */
+    /* padding: 1rem; */
     border-radius: 10px
 }
 
@@ -76,18 +93,22 @@ nav a {
     margin-left: -10px;
 }
 
-.certificate {
+.student img{
+    width: 100%;
+}
+
+.web_certificate {
     grid-column: 1/3;
-    grid-row: 2/3;
+    grid-row: 3/4;
     background: rgba(225, 225, 225, 0.7);
-    width: 950px;
-    margin-left: 80px;
-    margin-top: 50px;
+    width: 95%;
+    /* margin-left: 80px;
+    margin-top: 50px; */
     padding: 2rem;
     border-radius: 10px
 }
 
-.certificate h2{
+.web_certificate h2{
     background-color: aquamarine;
     width: 95%;
     padding: 1rem;
