@@ -14,12 +14,22 @@
         width: 70px;
     }
 
+    nav {
+        /* display: flex; */
+        flex-direction: column;
+    }
+
     nav a {
         padding: 0.4rem;
         font-size: 0.9rem;
         display: block;
         text-align: center;
         margin: 5px 0;
+    }
+
+    main {
+         display: flex;
+         flex-direction: column;
     }
 
     #home {
@@ -52,6 +62,10 @@
 
     .socialmedia img {
         max-height: 25px;
+    }
+
+    .hamburger {
+        display: block;
     }
 }
 

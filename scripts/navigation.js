@@ -1,5 +1,12 @@
 
-document.getElementById("hamburger").addEventListener("click", () => {
-  const nav = document.getElementById("navMenu");
-  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+document.getElementById("ham-btn").addEventListener("click", () => {
+  const nav = document.getElementById("Menu");
+  // nav.style.display = "flex" ? "none" : "flex";
+
+  if (nav.style.display === 'flex'){
+    nav.style.display = 'none';
+  }
+  else {
+    nav.style.display = 'flex';
+  }
 });

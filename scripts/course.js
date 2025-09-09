@@ -83,8 +83,8 @@ function renderCourses(filter = "all") {
   container.innerHTML = "";
 
   let filtered = courses;
-  if (filter === "wdd") filtered = courses.filter(c => c.code.startsWith("WDD"));
-  if (filter === "cse") filtered = courses.filter(c => c.code.startsWith("CSE"));
+  if (filter === "wdd") filtered = courses.filter(c => c.subject.startsWith("WDD"));
+  if (filter === "cse") filtered = courses.filter(c => c.subject.startsWith("CSE"));
 
   let totalCredits = filtered.reduce((sum, course) => sum + course.credits, 0);
   document.getElementById("totalCredits").textContent = totalCredits;
@@ -95,7 +95,7 @@ function renderCourses(filter = "all") {
     card.style.backgroundColor = course.completed ? "#cce5ff" : "#f8d7da";
     card.style.padding = "1rem";
     card.style.marginBottom = "1rem";
-    card.innerHTML = `<strong>${course.number}</strong>: ${course.subject} (${course.credits} credits)`;
+    card.innerHTML = `<strong>${course.subject} ${course.number}</strong> (${course.credits} credits)`;
     container.appendChild(card);
   });
 }
