@@ -14,13 +14,29 @@
   <link rel="stylesheet" href="styles/small.css" />
   <script src="scripts/date.js" defer></script>
   <script src="scripts/course.js" defer></script>
+  <link rel="icon" href="./images/favicon.ico">
+   <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="WDD231 Home Page" />
+  <meta property="og:description" content="Home page for the Web Development and Software certificate project by Dario Giaccone." />
+  <meta property="og:image" content="https://mydomain.com/images/profile.jpg" />
+  <meta property="og:url" content="https://mydomain.com/index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
 </head>
+
 <body>
   <header>
-    <img src="images/trinacria..jpg" alt="Site Logo" class="Logo" width="200"/>
-    <span>WDD231</span>
+    <img src="images/trinacria..jpg" alt="Site Logo" id="Logo" />
+    
+    <span class="course_title">WDD231</span>
 
-    <button id="ham-btn" class="hamburger"></button>
+    <!-- <button id="ham-btn" class="hamburger"></button> -->
+    <button id="ham-btn" class="hamburger">
+     <span></span>
+     <span></span>
+     <span></span>
+    </button>
+
 
     <nav id="Menu">
       <a href="#">Home</a>

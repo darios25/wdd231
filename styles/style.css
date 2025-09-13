@@ -24,14 +24,31 @@ header {
     padding: 1rem;
 }
 
+/* header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  position: relative;
+} */
+
     
-.logo {
-    width: 90px;
-    height: auto;
+header img {
+    width: 100px;
+    margin-right: auto;
+}
+
+.course_title {
+    position: absolute;
+    top: 1rem;
+    margin-left: 1rem;
+    font-size: 2rem;
 }
 
 nav {
-     display: flex;
+    display: flex;
     flex-direction: row;
     gap: 1rem;
 }
@@ -155,18 +172,7 @@ footer {
 }
 
 
-.hamburger {
-      width: 30px;
-      height: 25px;
-      display: none;
-      flex-direction: column;
-      justify-content: space-between;
-      cursor: pointer;
-      padding: 10px;
-    }
+.hamburger{
+    display: none;
 
-    .hamburger span {
-      height: 4px;
-      background: #333;
-      border-radius: 2px;
-    }
+}
