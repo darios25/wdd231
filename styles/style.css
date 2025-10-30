@@ -62,6 +62,10 @@ nav a {
    
 }
 
+nav a:hover {
+    background: rgb(245, 245, 99);
+}
+
 div filter {
     text-decoration: none;
     color: var(--primary-color);
