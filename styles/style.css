@@ -67,6 +67,14 @@ nav a:hover {
     background: rgb(245, 245, 99);
 }
 
+nav a.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
 div filter {
     text-decoration: none;
     color: var(--primary-color);

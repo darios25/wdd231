@@ -10,3 +10,16 @@ document.getElementById("ham-btn").addEventListener("click", () => {
     nav.style.display = 'flex';
   }
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll('#Menu a');
+  const currentPage = window.location.pathname.split("/").pop();
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+});
+
