@@ -53,6 +53,17 @@ nav {
     gap: 1rem;
 }
 
+nav ul {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+
+}
+
 nav a {
     text-decoration: none;
     color: var(--primary-color);

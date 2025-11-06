@@ -21,6 +21,10 @@
         flex-direction: column;
     }
 
+    nav ul {
+        display: block;
+    }
+
     nav a {
         padding: 0.4rem;
         font-size: 0.9rem;
