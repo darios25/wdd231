@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Chamber of Commerce project for the Web Development and Software certificate project.">
+  <meta name="author" content="Dario Giaccone">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wdd231 Sicily Chamber of Commerce - Directory</title>
+  <link rel="icon" href="images/favicon.ico" type="">
+
+  
+  <meta property="og:title" content="Sicily Chamber of Commerce - Directory">
+  <meta property="og:description" content="Scopri i membri della Camera di Commercio di Palermo.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:url" content="https://tuosito.it/chamber/directory.html">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sicily Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="view-toggle">
+      <button id="grid-view">Griglia</button>
+      <button id="list-view">Elenco</button>
+    </section>
+    <section id="members-container" class="grid-view"></section>
+  </main>
+
+  <footer>
+    <p>Contatti: info@camera-palermo.it | Tel: 091-123456</p>
+    <p>Sviluppato da Dario – WDD 231</p>
+    <p>&copy; <span id="year"></span> | Ultima modifica: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
+
+
