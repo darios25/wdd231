@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Tecnocasa",
+      "address": "Piazzale Enrico Mattei 1, Palermo, Sicily, Italy",
+      "phone": "+39 091 59821",
+      "website": "https://www.tecnocasa.com",
+      "image": "../images/agenzie-immobiliari.jpg",
+      "membershipLevel": "Gold",
+      "description": "Industry experts, trust us to find your dream home.."
+    },
+    {
+      "name": "Sport Fitness Club",
+      "address": "Piazzale Angelo Pes 46, Palermo, Sicily, Italy",
+      "phone": "+39 091 1234567",
+      "website": "https://www.SportFC.com",
+      "image": "../images/gym.jpg",
+      "membershipLevel": "Gold",
+      "description": "Experts in physical care and well-being."
+    },
+    {
+      "name": "Sicilia Costruzioni srl",
+      "address": "Via Tornabuoni 73, Palermo, Sicily, Italy",
+      "phone": "+39 091 123456",
+      "website": "https://www.siciliacostruzioni.com",
+      "image": "../images/impresa-costruzioni.jpg",
+      "membershipLevel": "Silver",
+      "description": "Italian leader in the construction sector."
+    },
+    {
+      "name": "Autofficina e soccorso auto",
+      "address": "Galleria Vittorio Emanuele II 4, Palermo, Sicily, Italy",
+      "phone": "+39 091 857463",
+      "website": "https://www.autofficina.com",
+      "image": "../images/officina-meccanica.jpg",
+      "membershipLevel": "Silver",
+      "description": "Experts in car repairs and efficient roadside assistance."
+    },
+    {
+      "name": "Oleificio Massaro",
+      "address": "Via Chiaretto 2, Palermo, Sicily, Italy",
+      "phone": "+39 091 156388",
+      "website": "https://www.oleificiomassaro.com",
+      "image": "../images/oleificio.jpg",
+      "membershipLevel": "Bronze",
+      "description": "Company producing high-quality extra virgin olive oil."
+    },
+    {
+      "name": "Charleston Resort Palermo",
+      "address": "Via Mondello 31, Palermo, Sicily, Italy",
+      "phone": "+39 091 76543210",
+      "website": "https://www.charleston.com",
+      "image": "../images/resort_palermo.jpg",
+      "membershipLevel": "Gold",
+      "description": "A unique location with many facets, designed to welcome a wide range of national and international guests."
+    },
+    {
+      "name": "Pescheria Beccafico",
+      "address": "Via Lorello 53, Palermo, Sicily, Italy",
+      "phone": "+39 091 813765",
+      "website": "https://www.beccafico.com",
+      "image": "../images/pescheria.jpg",
+      "membershipLevel": "Gold",
+      "description": "Company dedicated to the processing and wholesale of fish."
+    }
+  ]
+}
