@@ -6,13 +6,13 @@
   <meta name="author" content="Dario Giaccone">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Wdd231 Sicily Chamber of Commerce - Directory</title>
+  <title>Wdd231 Sicily Chamber of Commerce - Home</title>
   
 
-  <meta property="og:title" content="Sicily Chamber of Commerce - Directory">
+  <meta property="og:title" content="Sicily Chamber of Commerce - Home">
   <meta property="og:description" content="Join the members Sicily Chamber of Commerce.">
-  <meta property="og:image" content="images/SICILY-CHAMBER-OF-COMMERCE-LOGO.jpg">
-  <meta property="og:url" content="https://darios25.github.io/chamber/directory.html">
+  <meta property="og:image" content="images/sicily-chamber-logo.jpg">
+  <meta property="og:url" content="https://darios25.github.io/chamber/index.html">
 
   <link rel="icon" href="images/favicon.ico" type="">
   <link rel="stylesheet" href="styles/normalize.css">
@@ -23,14 +23,14 @@
 </head>
 <body>
   <header>
-    <img src="images/SICILY-CHAMBER-OF-COMMERCE-LOGO.jpg" loading="lazy" alt="Logo chamber of commerce" width="100" height="100">
+    <img src="images/sicily-chamber-logo.jpg" loading="lazy" alt="Logo chamber of commerce" width="100" height="100">
     <h1>Sicily Chamber of Commerce</h1>
 
     <nav>
       <button id="menu-toggle" aria-label="Navigation menu">☰</button>  
       <ul id="menu-items">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="discover.html">Discover</a></li>
       </ul>
@@ -38,3 +38,72 @@
 
     <button id="theme-toggle" aria-label="Toggle dark/light mode">🌓</button>
   </header>
+
+  <main class="main-index">
+    <section class="hero">
+        <img src="images/hero-img.jpg" alt="hero image" loading="lazy">
+        <div class="boton-hero">
+            <h2>Empowering Businesses in Sicily</h2>
+            <p>Connect Grow Succeed</p>
+            <a href="join.html" class="boton-hero-join">Join Us</a>
+        </div>
+    </section>
+    <section class="events">
+      <h2>Events</h2>
+      <ul>
+        <li><strong>Business Networking Night</strong> : Nov 25, 2025 | 8.00 PM - Via Roma 1, Palermo</li>
+        <li><strong>Digital Marketing Workshop</strong> : Dec 3, 2025 | 11.00 AM - Corso Alfio 52, Catania</li>
+        <li><strong>Startup Pitch Day</strong> : Dec 10, 2025 | 9.00 AM - Via Vittorio 23, Messina</li>
+      </ul>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather">
+      <h2>Current Weather in Palermo</h2>
+      <div id="weather-info">
+        <p><strong>Temperature:</strong> <span id="temp"></span></p>
+        <p><strong>Conditions:</strong> <span id="description"></span></p>
+        <div id="forecast"></div>
+      </div>
+    </section>
+
+    <!-- Business Spotlights -->
+    <section class="spotlights">
+      <h2>Featured Members</h2>
+      <div id="spotlight-container" class="spotlight-grid">
+        <!-- Cards will be injected here via JS -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Sicily Chamber of Commerce</p>
+        <p>Via della Libertà 191/A, Palermo, Sicily</p>
+        <p>Phone: +39 091-123456</p>
+        <p>Email: darios25@hotmail.it</p>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <a href="https://github.com/darios25"><img src="images/github.svg" alt="GitHub Page"></a>
+      <a href="https://www.linkedin.com/in/dario-giaccone-24ab5b29a"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://x.com/"><img src="images/twitter-x.svg" alt="Twitter X"></a>
+    </div>
+
+    <div class="development-info">
+      <h3>Development Information</h3>
+      <p>WDD 231 – Chamber of Commerce</p>
+      <p>&copy; <span id="year"></span> Dario Giaccone, Sicily, Italy</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
+</body>
+</html>
+
+
