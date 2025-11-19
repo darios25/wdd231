@@ -1,98 +1,122 @@
-// const url = './data/members.json';
+// Weather
+const apiKey = "28a81ffae60b680f6b7a95e64d8f5788";
+const city = "Palermo";
+const units = "metric";
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
+
+async function getWeather() {
+  try {
+    const response = await fetch(weatherUrl);
+    const data = await response.json();
+
+    document.getElementById("temperature").textContent = `${data.main.temp.toFixed(1)} °C`;
+    document.getElementById("conditions").textContent = data.weather[0].description;
+    document.getElementById("high").textContent = `${data.main.temp_max.toFixed(1)} °C`;
+    document.getElementById("low").textContent = `${data.main.temp_min.toFixed(1)} °C`;
+    document.getElementById("humidity").textContent = `${data.main.humidity}%`;
+
+    const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" });
+    const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" });
+
+    document.getElementById("sunrise").textContent = sunrise;
+    document.getElementById("sunset").textContent = sunset;
+
+    getForecast();
+  } catch (error) {
+    console.error("Errore nel recupero del meteo:", error);
+  }
+}
+
+async function getForecast() {
+  try {
+    const response = await fetch(forecastUrl);
+    const data = await response.json();
+
+    const forecastContainer = document.getElementById("forecast");
+    forecastContainer.innerHTML = "<h3>Previsione 3 giorni</h3>";
+
+    let today = new Date().getDate();
+    let count = 0;
+
+    for (let item of data.list) {
+      const date = new Date(item.dt_txt);
+      if (date.getHours() === 12 && count < 3) {
+        const dayName = date.toLocaleDateString("it-IT", { weekday: "long" });
+        const temp = item.main.temp.toFixed(1);
+        const desc = item.weather[0].description;
+
+        const forecastItem = document.createElement("p");
+        forecastItem.textContent = `${dayName}: ${temp} °C, ${desc}`;
+        forecastContainer.appendChild(forecastItem);
+
+        if (count === 0) {
+          document.getElementById("now").innerHTML = `<strong>Today:</strong> ${temp} °C`;
+        } else if (count === 1) {
+          document.getElementById("after").innerHTML = `<strong>Tomorrow:</strong> ${temp} °C`;
+        } else if (count === 2) {
+          document.getElementById("days").innerHTML = `<strong>After Tomorrow:</strong> ${temp} °C`;
+        }
+
+        count++;
+      }
+    }
+  } catch (error) {
+    console.error("Errore nel recupero della previsione:", error);
+  }
+}
+
+getWeather();
 
 
-// async function getMembersData(url) {
-//   try {
-//     const response = await fetch(url);
-//     if (!response.ok) {
-//       throw new Error(`Error HTTP: ${response.status}`);
-//     }
-//     const data = await response.json();
-    
-//     displayMembers(data.members);
-//   } catch (error) {
-//     console.error("Error al obtener los datos:", error);
-//   }
-// }
+//spotlight
+const spotlightContainer = document.getElementById("spotlight-container");
 
+async function loadSpotlights() {
+  try {
+    const response = await fetch("data/members.json");
+    if (!response.ok) throw new Error("Impossibile recuperare i dati dei membri.");
 
-// function displayMembers(members) {
-//   const display = document.querySelector("#cards");
-//   display.innerHTML = ""; 
-  
-//   members.forEach(member => {
-    
-//     const card = document.createElement("section");
-//     card.classList.add("card");
+    const { members } = await response.json();
 
-    
-//     const companyName = document.createElement("h2");
-//     companyName.textContent = member.name;
+    // Filtra solo membri Gold o Silver
+    const eligible = members.filter(member =>
+      ["Gold", "Silver"].includes(member.membership)
+    );
 
-    
-//     const portrait = document.createElement("img");
-//     portrait.setAttribute("src", member.imageUrl);
-//     portrait.setAttribute("alt", `Logo de ${member.name}`);
-//     portrait.setAttribute("loading", "lazy");
-//     portrait.setAttribute("width", "100");
-//     portrait.setAttribute("height", "100");
+    // Mescola casualmente e seleziona fino a 3
+    const selected = eligible
+      .sort(() => Math.random() - 0.5)
+      .slice(0, Math.min(3, eligible.length));
 
-    
-//     const address = document.createElement("p");
-//     address.textContent = member.address;
+    // Pulisce il contenitore prima di aggiungere nuovi elementi
+    spotlightContainer.innerHTML = "";
 
-    
-//     const phoneNumber = document.createElement("p");
-//     phoneNumber.textContent = member.phone;
+    selected.forEach(member => {
+      const card = document.createElement("div");
+      card.classList.add("spotlight-card");
 
-    
-//     const website = document.createElement("a");
-//     website.setAttribute("href", member.website);
-//     website.setAttribute("target", "_blank");
-//     website.textContent = "Sitio web";
+      card.innerHTML = `
+        <img src="${member.logo}" alt="Logo di ${member.name}" loading="lazy">
+        <div class="spotlight-details">
+          <h3>${member.name}</h3>
+          <p><strong>Telefono:</strong> ${member.phone}</p>
+          <p><strong>Indirizzo:</strong> ${member.address}</p>
+          <p><strong>Sito Web:</strong> <a href="${member.website}" target="_blank" rel="noopener">${member.website}</a></p>
+          <p><strong>Livello:</strong> ${member.membership}</p>
+        </div>
+      `;
 
-    
-//     card.appendChild(companyName);
-//     card.appendChild(portrait);
-//     card.appendChild(address);
-//     card.appendChild(phoneNumber);
-//     card.appendChild(website);
+      spotlightContainer.appendChild(card);
+    });
+  } catch (error) {
+    console.error("Errore nel caricamento dei riflettori:", error);
+    spotlightContainer.innerHTML = "<p>Impossibile caricare i membri in evidenza al momento.</p>";
+  }
+}
 
-    
-//     const description = document.createElement("p");
-//     description.textContent = member.description;
-//     card.appendChild(description);
-    
-   
-//     display.appendChild(card);
-//   });
-// }
+loadSpotlights();
 
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const gridbutton = document.querySelector("#grid");
-//   const listbutton = document.querySelector("#list");
-//   const display = document.querySelector("#cards");
-
-//   if (gridbutton && listbutton && display) {
-    // Vista Grid
-    // gridbutton.addEventListener("click", () => {
-    //   display.classList.add("grid");
-    //   display.classList.remove("list");
-    // });
-
-    // Vista Lista
-//     listbutton.addEventListener("click", () => {
-//       display.classList.add("list");
-//       display.classList.remove("grid");
-//     });
-//   } else {
-//     console.error("No se encontraron los elementos necesarios (botones o contenedor).");
-//   }
-  
-  
-//   getMembersData(url);
-// });
 
 // Dark mode toggle
 const themeToggle = document.getElementById('theme-toggle');

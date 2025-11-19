@@ -152,6 +152,165 @@ footer {
   margin-right: 0.5rem;
 }
 
+/* Index Reset base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+main.main-index {
+  padding: 1rem;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.boton-hero {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+.boton-hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.boton-hero-join {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff9800;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Events + Weather Layout */
+.events-weather-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.events,
+.weather,
+.weather-forecast {
+  flex: 1 1 30%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.events h2,
+.weather h2,
+.weather-forecast h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+#weather-info p,
+#forecast p {
+  margin-bottom: 0.5rem;
+}
+
+/* Spotlights Section */
+.spotlights {
+  margin-top: 2rem;
+}
+
+.spotlights h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.spotlight-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.spotlight-card {
+  flex: 1 1 30%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-card img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.spotlight-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.spotlight-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .events-weather-container {
+    flex-direction: column;
+  }
+
+  .spotlight-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .spotlight-card {
+    width: 90%;
+  }
+
+  .boton-hero {
+    position: static;
+    transform: none;
+    margin-top: -3rem;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+
+
 @media screen and (max-width: 600px) {
   header {
     flex-direction: column;
