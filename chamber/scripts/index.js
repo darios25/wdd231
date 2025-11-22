@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
       selected.forEach(member => {
         const {
           name = "Nome non disponibile",
-          logo = "",
+          image = "",
           phone = "—",
           address = "—",
           website = "",
@@ -204,7 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const safeWebsite = website ? website : null;
 
         card.innerHTML = `
-          <img src="${member.imageUrl}" alt="Logo di ${member.name}" loading="lazy" onerror="this.style.display='none'"> 
+          <img src="${member.image}" alt="${member.name}" loading="lazy" onerror="this.style.display='none'"> 
           <div class="spotlight-details">
             <h3>${name}</h3>
             <p><strong>Telefono:</strong> ${phone}</p>
