@@ -209,16 +209,23 @@ main.main-index {
   border-radius: 4px;
 } 
 
-/* Events + Weather Layout */
-.events-weather-container{
+/*home*/
+#home{
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr;
+}
+
+/* Events + Weather Layout */
+/* .events-weather-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   margin-top: 40px;
   margin-bottom: 2rem;
-}
+} */
 
-.events,
+/* .events,
 .weather,
 .weather-forecast {
   flex: 1 1 30%;
@@ -226,7 +233,7 @@ main.main-index {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .events h2,
 .weather h2,
