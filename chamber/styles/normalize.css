@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 main {
-  display: block;
+  display: grid;
 }
 h1 {
   font-size: 2em;
@@ -27,4 +27,75 @@ textarea {
   margin: 0;
 }
 
+
+/* normalize.css - Basic Reset and Normalization */
+
+/* 1. Imposta il box-sizing su border-box per tutti gli elementi */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Rimuove margini e padding predefiniti */
+body,
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, figure,
+blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Imposta altezza e larghezza al 100% */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* 4. Imposta una base leggibile per il testo */
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 5. Rimuove stili elenco */
+ul, ol {
+  list-style: none;
+}
+
+/* 6. Rimuove decorazioni dai link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 7. Rende le immagini responsive */
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* 8. Rimuove bordi e outline da pulsanti e input */
+button, input, textarea, select {
+  font: inherit;
+  border: 1px solid white;
+  color: white;
+  outline: none;
+  background: #333;
+}
+
+/* 9. Migliora l'accessibilità dei pulsanti */
+button {
+  cursor: pointer;
+}
+
+/* 10. Imposta un comportamento coerente per le tabelle */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
