@@ -311,11 +311,180 @@ main.main-index {
 }
 
 
+/* JOIN -----------------------------------*/
+.membership-info {
+    padding: 10px;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+}
+.thank-you {
+    text-align: center;
+}
+.thank-you .button {
+    display: inline-block;
+    background: var(--primary-color);
+    color:var(--background-color);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+}
+.thank-you .button:hover {
+    background:var(--highlight-blue);
+}
+.join {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 50px;
+  text-align: center;
+  border-radius:8px;
+  background-color: rgb(232, 238, 238);
+  box-shadow: var(--shadow-medium);
+}
+.join h2 {
+  color: var(--dark-gray);
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.membership-cards {
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+/* Esempio: stili per le carte */
+.card{
+  border: 2px solid var(--otro-color);
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: 90px;
+  /* larghezza per la visualizzazione griglia; nell'elenco viene sovrascritto */
+  width: 200px;
+  box-shadow: 10px 10px 5px rgba(0,0,0,0.1);
+  background-color: var(--medium-gray);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card button {
+  background: var(--dark-gray);
+  color: var(--light-gray);
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: 0.3s ease;
+}
+.card h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+button:hover {
+  background: var(--color);
+}
+
+/* Stili di modulo */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+  margin-top: 50px;
+}
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--button-hover-blue);
+}
+/* Input, seleziona l'area di testo y */
+form input,
+form select,
+form textarea {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* Pulsante Invia modulo */
+form button[type="submit"] {
+  background: yellow;
+  color: black;
+  border: none;
+  padding: 12px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+form button[type="submit"]:hover {
+  background: orangered;
+}
+/* Stili per la finestra di dialogo */
+dialog {
+  width: 300px;
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+}
+#closeButton {
+  background:var(--close-button-red);
+  padding:8px 10px;
+  border: none;
+  color: var(--background-color);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+#closeButton:hover {
+  background:var(--close-button-hover-red);
+}
+
+/* Versione small Join (mobile) */
+@media (max-width: 600px) {
+  .join {
+    padding: 20px;          /* meno padding su schermi piccoli */
+  }
+
+  .membership-cards {
+    display: flex;          /* usa flexbox */
+    flex-direction: column; /* disposizione verticale */
+    gap: 20px;
+    margin: 20px auto;
+    padding: 0;
+    align-items: center;    /* centra le card */
+  }
+
+  .card {
+    width: 100%;            /* occupa tutta la larghezza disponibile */
+    max-width: 300px;       /* limite massimo per non allargarsi troppo */
+    margin: 0 auto;         /* centra la card */
+  }
+
+  .join h2 {
+    font-size: 1.5rem;      /* titolo più piccolo */
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
 /* Responsive Layout */
 @media (max-width: 768px) {
   .events-weather-container {
     flex-direction: column;
   }
+  
 
   /* .spotlight-grid {
     flex-direction: column;
