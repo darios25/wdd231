@@ -319,18 +319,49 @@ main.main-index {
 }
 .thank-you {
     text-align: center;
+    max-width: 900px;
+    margin: 1rem auto;
+    padding: 50px;
+    text-align: center;
+    border-radius:8px;
+    background-color: rgb(232, 238, 238);
+    box-shadow: var(--shadow-medium);
+}
+
+.thank-you .confirmation{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+  margin-top: 50px;
 }
 .thank-you .button {
     display: inline-block;
-    background: var(--primary-color);
-    color:var(--background-color);
+    margin: 1rem auto;
+    background: yellow;
+    color:black;
     padding: 10px 20px;
+    font-size: 18px;
+    width: 200px;
+    text-align: center;
     border-radius: var(--border-radius);
     text-decoration: none;
 }
 .thank-you .button:hover {
-    background:var(--highlight-blue);
+    background:orangered;
 }
+
+.thank-you .confirmation{
+  display: grid;
+  gap: 1rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+
 .join {
   max-width: 900px;
   margin: 2rem auto;

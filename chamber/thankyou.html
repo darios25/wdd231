@@ -30,7 +30,7 @@
       <button id="menu-toggle" aria-label="Navigation menu">☰</button>  
       <ul id="menu-items">
         <li><a href="index.html">Home</a></li>
-        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="discover.html">Discover</a></li>
       </ul>
@@ -41,8 +41,19 @@
 
   <main class="thank-you">
     <h1>Thank You!</h1>
-    <p>Your application has been received. We will contact you soon.</p>
-    <a href="index.html" class="button">Return Home</a>
+    <p>We appreciate your application.Your application has been received. We will contact you soon.</p>
+    <div class="confirmation">
+      <p><strong>First Name:</strong> <span id="firstName"></span></p>
+      <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+      <p><strong>Title/Position:</strong> <span id="titleposition"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Phone:</strong> <span id="phone"></span></p>
+      <p><strong>Business/Organization Name:</strong> <span id="businessorganization name"></span></p>
+      <p><strong>Membership Level:</strong> <span id="membership level"></span></p>
+      <p><strong>Business Description:</strong> <span id="business description"></span></p>
+      <p><strong>Timestamp:</strong> <span id="timestamp"></span></p>
+    </div>
+    <a href="index.html" class="button"><strong>Return Home</strong></a>
   </main>
 
   <footer>
@@ -77,5 +88,8 @@
   </footer>
 
   <script src="scripts/scriptMenu.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/index.js" defer></script>
 </body>
 </html>
