@@ -1,5 +1,5 @@
 // js/discover.js
-import { items } from "/chamber/data/items.mjs";
+import { items } from "./data/items.mjs";
 
 // Render cards into pre-existing article slots (.area-a1 ... .area-a8)
 const slots = document.querySelectorAll(".discover-grid .card");
