@@ -7,7 +7,7 @@
 /* Estilo básico del body */
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #FFFFFF; /* Fondo blanco para un look limpio */
+    background-color: #F5F5F5; /* Fondo blanco para un look limpio */
     color: #282a26; /* Texto en gris oscuro */
     line-height: 1.6;
     padding: 20px;
@@ -17,7 +17,7 @@ body {
 /* Estilo del encabezado */
 header {
     background-color: #a3cd9e; /* Gris oscuro */
-    color: #FFFFFF; /* Texto blanco */
+    color: #212121; /* Texto blanco */
     text-align: center;
     padding: 40px 20px;
 }
@@ -40,7 +40,7 @@ h2 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
-    color: #585a8a; /* Gris oscuro */
+    color:#2E7D32; /* Gris oscuro */
     margin-bottom: 15px;
 }
 
@@ -85,8 +85,8 @@ ul li {
 }
 /* Estilo del footer */
 footer {
-    background-color: #acd4e8; /* Gris oscuro */
-    color: #FFFFFF; /* Texto blanco */
+    background-color:  #a3cd9e;
+    color: #212121; /* Texto blanco */
     text-align: center;
     padding: 20px;
     margin-top: 40px;
