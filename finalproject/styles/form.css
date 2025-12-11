@@ -1,7 +1,7 @@
 :root {
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
-  --background-color: #ecf0f1;
+  --background-color: #E8E3D9;
   --text-color: #333;
   --font-family: 'Segoe UI', sans-serif;
 }
@@ -18,7 +18,7 @@ body.dark-mode {
   /* --primary-color: #222; */
   --secondary-color: #ffcc00;
   --background-color: #121212;
-  --text-color: grey;
+  --text-color: #3E6B48 ;
 }
 
 #theme-toggle {
