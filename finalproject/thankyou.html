@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Final project for the Web Development and Software certificate project.">
+  <meta name="author" content="Dario Giaccone">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Wdd231 Sicilia Trek Hub - Trekking Guide in Sicily</title>
+  
+
+  <meta property="og:title" content="Sicilia Trek Hub - Join">
+  <meta property="og:image" content="images/Logo.png">
+  <meta property="og:url" content="https://darios25.github.io/finalproject/index.html">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DynaPuff:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <script src="scripts/join.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <img src="images/Logo.png" loading="lazy" alt="Logo Sicilia Trek Hub" width="100" height="100">
+    <h1>Sicilia Trek Hub</h1>
+
+    <nav>
+      <button id="menu-toggle" aria-label="Navigation menu">☰</button>  
+      <ul id="menu-items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+
+    <button id="theme-toggle" aria-label="Toggle dark/light mode">🌓</button>
+  </header>
+
+  <main class="thank-you">
+    <h1>Thank You!</h1>
+    <p>Your trekking registration has been received. We will contact you soon with more details.</p>
+    <div class="confirmation">
+        <p><strong>First Name:</strong> <span id="firstName"></span></p>
+        <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Phone:</strong> <span id="phone"></span></p>
+        <p><strong>Trekking Package:</strong> <span id="trekkingpackage"></span></p>
+        <p><strong>Trekking Preferences:</strong> <span id="trekkingpreferences"></span></p>
+        <p><strong>Timestamp:</strong> <span id="timestamp"></span></p>
+    </div>
+    <a href="index.html" class="button"><strong>Return Home</strong></a>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Sicilia Trek Hub</p>
+        <p>Via della Libertà 191/A, Palermo, Sicily</p>
+        <p>Phone: +39 091-123456</p>
+        <p>Email: darios25@hotmail.it</p>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <a href="https://github.com/darios25"><img src="images/github.svg" alt="GitHub Page"></a>
+      <a href="https://www.linkedin.com/in/dario-giaccone-24ab5b29a"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://x.com/"><img src="images/twitter-x.svg" alt="Twitter X"></a>
+    </div>
+
+    <div class="development-info">
+      <h3>Development Information</h3>
+      <p>WDD 231 – Final project</p>
+      <p>&copy; <span id="year"></span> Dario Giaccone, Sicily, Italy</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+  
+</body>
+</html>

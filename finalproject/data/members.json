@@ -1,0 +1,125 @@
+{
+  "members": [
+    {
+      "name": "Etna Summit Trek",
+      "address": "Catania, Sicily",
+      "website": "www.etnatrek.com",
+      "image": "../images/etna.jpg",
+      "level": "Medium",
+      "description": "Guided hike to the summit craters of Mount Etna, Europe’s highest active volcano."
+    },
+    {
+      "name": "Madonie Mountain Trails",
+      "address": "Madonie National Park, Sicily",
+      "website": "www.madonietrekking.it",
+      "image": "../images/madonie.jpg",
+      "level": "Difficult",
+      "description": "Explore oak forests, limestone peaks, and traditional villages in the Madonie mountains."
+    },
+    {
+      "name": "Nebrodi Adventure Hikes",
+      "address": "Nebrodi Park, Sicily.",
+      "website": "www.nebrodiadventure.com",
+      "image": "../images/nebrodi.jpg",
+      "membershipLevel": "Difficult",
+      "description": "Long-distance trekking routes across Sicily’s largest protected natural area."
+    },
+    {
+      "name": "Zingaro Coastal Path",
+      "address": "Riserva dello Zingaro, Trapani",
+      "website": "www.zingarotrek.com",
+      "image": "../images/zingaro.jpg",
+      "membershipLevel": "Easy",
+      "description": "Scenic coastal trek with hidden coves, turquoise waters, and Mediterranean flora."
+    },
+    {
+      "name": "Aeolian Islands Trekking",
+      "address": "Lipari, Aeolian Islands",
+      "website": "www.aeolian-trekking.com",
+      "image": "../images/eolie.jpg",
+      "membershipLevel": "Medium",
+      "description": "Volcanic island hikes including Stromboli’s night-time lava show and Salina’s twin peaks."
+    },
+    {
+      "name": "Monte Pellegrino Trails",
+      "address": "Palermo, Sicily",
+      "website": "www.pellegrino.com",
+      "image": "../images/pellegrino.jpg",
+      "membershipLevel": "Easy",
+      "description": "Urban trekking above Palermo with panoramic views and historic sanctuaries."
+    },
+    {
+      "name": "Alcantara Gorge Walks",
+      "address": "Alcantara Valley, Sicily",
+      "website": "www.alcantara-trekking.com",
+      "image": "../images/alcantara.jpg",
+      "membershipLevel": "Medium",
+      "description": "Trek along basalt gorges carved by ancient lava flows and cool river streams."
+    },
+    {
+      "name": "Monte Cammarata Trek",
+      "address": "Agrigento Province, Sicily",
+      "website": "www.cammaratatrek.com",
+      "image": "../images/cammarata.jpg",
+      "membershipLevel": "Medium",
+      "description": "Hike to the summit of Monte Cammarata with views over central Sicily." 
+    },
+    {
+      "name": "Pantalica Necropolis Hike",
+      "address": "Anapo Valley, Syracuse",
+      "website": "www.pantalicatrek.com",
+      "image": "../images/pantalica.jpg",
+      "membershipLevel": "Easy",
+      "description": "Trek through canyons and ancient rock-cut tombs in the UNESCO-listed Pantalica site."
+    },
+    {
+      "name": "Monte San Calogero Trails",
+      "address": "Termini Imerese, Sicily",
+      "website": "www.sancalogerotrails.com",
+      "image": "../images/sancalogero.jpg",
+      "membershipLevel": "Medium",
+      "description": "Panoramic hikes overlooking the Tyrrhenian coast and archaeological sites."
+    },
+    {
+      "name": "Sicani Mountains Trekking",
+      "address": "Sicani Natural Park, Sicily",
+      "website": "www.sicanipark.com",
+      "image": "../images/sicani.jpg",
+      "membershipLevel": "Difficult",
+      "description": "Discover hidden valleys, shepherd paths, and authentic Sicilian villages."
+    },
+    {
+      "name": "Monte Lauro Volcano Hike",
+      "address": "Hyblean Mountains, Ragusa",
+      "website": "www.laurotrek.com",
+      "image": "../images/lauro.jpg",
+      "membershipLevel": "Medium",
+      "description": "Trek to the extinct volcano Monte Lauro, the highest peak in southeastern Sicily."
+    },
+    {
+      "name": "Monte Cofano Coastal Trek",
+      "address": "Monte Cofano Nature Reserve, Trapani",
+      "website": "www.cofanotrek.com",
+      "image": "../images/cofano.jpg",
+      "membershipLevel": "Easy",
+      "description": "A panoramic coastal hike around Monte Cofano with views of cliffs, sea caves, and Mediterranean scrub."
+    },
+    {
+      "name": "Bosco della Ficuzza Trails",
+      "address": "Ficuzza Forest, Palermo",
+      "website": "www.ficuzzatrek.com",
+      "image": "../images/ficuzza.jpg",
+      "membershipLevel": "Medium",
+      "description": "Explore oak forests, wildlife habitats, and historic hunting lodges in one of Sicily’s largest woodlands."
+    },
+    {
+      "name": "Monte Arcibessi Hike",
+      "address": "Hyblean Mountains, Ragusa",
+      "website": "www.arcibessitrek.com",
+      "image": "../images/arcibessi.jpg",
+      "membershipLevel": "Difficult",
+      "description": "Challenging ascent to Monte Arcibessi, offering sweeping views over southeastern Sicily and the Mediterranean.",
+      "cost": "per person"
+    }
+  ]
+}
